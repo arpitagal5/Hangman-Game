@@ -40,18 +40,18 @@ function handleGuess(chosenLetter) {
 
 function updateMistakes() {
   document.getElementById('wrongGuess').innerHTML = mistakes;
-
 }
+
 function checkIfGameLost() {
   if (mistakes === maxWrong) {
     document.getElementById('wordspotlight').innerHTML = 'The answer is ' + answer;
     document.getElementById('keypad').innerHTML = 'You lose the Game';
   }
 }
+
 function updateHangman() {
   document.getElementById('hangmanPicture').src = './images/' + mistakes + '.jpg';
 }
-
 
 function checkIfGameWon() {
   if (languageStatus === answer) {
